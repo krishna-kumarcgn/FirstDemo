@@ -1,0 +1,19 @@
+#set Log Level & patterns, output file (Logging configuration with application.yml)
+logging:
+    file: /logs/application-debug.log
+    pattern:
+        console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+        file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+    level:
+        root: ERROR
+        org.springframework.web: ERROR
+        com.howtodoinjava: DEBUG
+        org.hibernate: ERROR
+  
+  
+  
+#set the color for output
+spring:
+    output:
+    ansi:
+        enabled: DETECT

@@ -8,5 +8,8 @@
 </head>
 <body>
 Hello
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+    <h2>ISBN You searched is :: ${ isbn.displayValue }</h2>
 </body>
 </html>
